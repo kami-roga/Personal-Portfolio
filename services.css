@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:#080808;
+    color: #fff;
+}
+.container{
+    padding: 10px 3%;
+}
+.header-text{
+    margin-top: 5%;
+    font-size: 50px;
+    color:rgb(225, 54, 193);
+}
+.column-list{
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Set the gap between columns */
+    list-style-type: disc; /* Set the bullet style */
+}
+.column-list li{
+    flex-basis: calc(100% / 3 - 20px); /* Set the width of each list item to one-third of the container width minus the gap */
+    max-width: calc(100% / 3 - 20px); /* Set the maximum width for each list item to one-third of the container width minus the gap */
+    word-wrap: break-word;
+}
+.column-list li span{
+    color: rgb(230, 215, 56);
+}
+/* -------details--------- */
+
+/* front-end developing */
+.container h1{
+    color: rgb(190, 183, 189);
+    font-size: 30px;
+    padding-top: 5px;
+}
+.container ul{
+    padding-left: 20px;
+}
+/* biologist */
+.container h2{ 
+    color: rgb(190, 183, 189);
+    font-size: 30px;
+    padding-top: 20px;
+}
+.container h2 ul li{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+/* computer programmer */
+.container h3{
+    color: rgb(190, 183, 189);
+    font-size: 30px;
+    padding-top: 20px;
+}
+.container h3 ul li{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
